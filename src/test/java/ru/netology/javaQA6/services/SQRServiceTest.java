@@ -1,3 +1,4 @@
+package ru.netology.javaQA6.services;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import ru.netology.javaQA6.services.SQRService;
