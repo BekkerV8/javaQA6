@@ -1,5 +1,4 @@
 package ru.netology.javaQA6.services;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -17,10 +16,10 @@ public class SQRServiceTest {
 
     // })
     @CsvFileSource(files = "src/test/resources/range.of.numbers")
-    public void shouldCalcExact(int from, int to, int expected) {
+    public void shouldCalcExact(int from, int to, int limitLow, int limitUp, int expected) {
         SQRService service = new SQRService();
         //int expected = 6;
-        int actual = service.calculateSQR(from, to);
+        int actual = service.calculateSQR(from, to, limitLow, limitUp);
 
         Assertions.assertEquals(expected, actual);
     }
