@@ -1,11 +1,10 @@
 package ru.netology.javaQA6.services;
 
 public class SQRService {
-    public int calculateSQR(int from, int to, int limitLow, int limitUp) {
+    public int calculateSQR(int limitLow, int limitUp) {
         int squares = 0;
-        for (int i = from; i <= to; i++) {
+        for (int i = 10; i <= 99; i++) {
             if (limitLow <= i * i && i * i <= limitUp) {
-                System.out.println("Корень из: " + i * i + "\n" + "      равен: " + i);
                 squares++;
             }
         }

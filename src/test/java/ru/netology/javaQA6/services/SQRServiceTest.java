@@ -16,10 +16,10 @@ public class SQRServiceTest {
 
     // })
     @CsvFileSource(files = "src/test/resources/range.of.numbers")
-    public void shouldCalcExact(int from, int to, int limitLow, int limitUp, int expected) {
+    public void shouldCalcExact(int limitLow, int limitUp, int expected) {
         SQRService service = new SQRService();
         //int expected = 6;
-        int actual = service.calculateSQR(from, to, limitLow, limitUp);
+        int actual = service.calculateSQR(limitLow, limitUp);
 
         Assertions.assertEquals(expected, actual);
     }
