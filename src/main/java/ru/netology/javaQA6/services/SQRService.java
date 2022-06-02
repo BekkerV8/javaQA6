@@ -5,7 +5,7 @@ public class SQRService {
         int squares = 0;
         for (int i = from; i <= to; i++) {
             if (limitLow <= i * i && i * i <= limitUp) {
-                System.out.println("*** i= " + i + ", i**2 " + i * i + "\n");
+                System.out.println("Корень из: " + i * i + "\n" + "      равен: " + i);
                 squares++;
             }
         }
